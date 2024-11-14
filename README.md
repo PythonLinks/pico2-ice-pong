@@ -10,17 +10,17 @@ quite fast, and quite simple.
 
 It can be developed in several stages.
 
-A simple test bench. (Working)
-Drive @shylie’s verilattor graphics code.
-On the FPGA, drive @Shylie’s firmware.
-Potentially drive @xarks FPGA DVI output.
+- A simple test bench. (Working)
+- Drive @shylie’s verilattor graphics code.
+- On the FPGA, drive @Shylie’s firmware.
+- Potentially drive @xarks FPGA DVI output.
 
 Once it is working, those who are good at firmware can use it to drive
 the HDMI.  Later it can be expanded to do color.   
 
 ## INSTALLATION
 
-First install verilator.  Then run the following commands. 
+First install iVerilog.  Then run the following commands. 
 
 ```
 git clone https://github.com/PythonLinks/pico2-ice-pong
