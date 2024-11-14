@@ -1,0 +1,24 @@
+#!/bin/bash
+
+rm -f result.vvp
+rm -f out.vcd
+
+iverilog -g2005-sv  -Wall -s tb -o result.vvp  tb.v 
+if [ $? -eq 1 ]; then
+    echo Source compilation failure
+    exit 1
+fi
+
+vvp result.vvp | more 
+
+if [ $? -ne 0 ]; then
+    echo Running simulation failure
+    exit 1
+fi
+
+#gtkwave signal.gtkw 
+#if [$? -ne 0]; then
+#    echo GTKWave failure
+#    exit 1
+#fi
+
