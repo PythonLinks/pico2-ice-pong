@@ -5,7 +5,7 @@ x and column are measured left to right
 y and row are measured top to bottom. 
 ***********************************************************/ 
 
-`include "preamble.h"
+`include "../verilog/preamble.h"
 
 //parameter width = 320;  //Screen width
 //parameter height = 180; //Screen height
@@ -16,8 +16,8 @@ parameter height = 10; //Screen height
 parameter xBits = $clog2(width); //Number of bits for x Position
 parameter yBits = $clog2(height); //Number of bits for yPositin 
 
-`include "bouncing.v"
-`include "screen.v"
+`include "../verilog/bouncing.v"
+`include "../verilog/screen.v"
 
 module tb();
    reg clock;

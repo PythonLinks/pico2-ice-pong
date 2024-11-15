@@ -24,6 +24,8 @@ First install iVerilog.  Then run the following commands.
 
 ```
 git clone https://github.com/PythonLinks/pico2-ice-pong
-cd pico2-ice-pong
+cd pico2-ice-pong/verilator
 ./run
 ```
+
+The file verilator/demo.txt shows what the output should look like.

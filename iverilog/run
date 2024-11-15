@@ -3,7 +3,7 @@
 rm -f result.vvp
 rm -f out.vcd
 
-iverilog -g2005-sv  -Wall -s tb -o result.vvp  tb.v 
+iverilog -g2005-sv  -Wall -s tb -o result.vvp  ../verilog/tb.v 
 if [ $? -eq 1 ]; then
     echo Source compilation failure
     exit 1
